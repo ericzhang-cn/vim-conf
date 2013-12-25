@@ -1,6 +1,5 @@
-syn on
-
 "basic{
+syntax on
 set helplang=cn "使用中文帮助文档
 set backspace=2
 set tabstop=4
@@ -18,8 +17,11 @@ set sidescroll=1 "屏幕放不下时，按一次屏幕移动一个字符
 set whichwrap=b,s,<,>,[,] "跨行移动
 set foldmethod=marker
 filetype plugin indent on "自动识别文件类型，用文件类型plugin脚本，使用缩进定义文件
-colorscheme darkblue
+set t_Co=256
+set background=dark
 "}
+
+execute pathogen#infect()
 
 "keymap{
 let mapleader = ','
@@ -31,7 +33,6 @@ nnoremap <leader>t :TlistToggle<CR>
 "set guifont=PowerlineSymbols\ for\ Powerline
 set nocompatible
 set laststatus=2
-set t_Co=256
 let g:Powerline_symbols = 'fancy'
 "}
 
@@ -42,4 +43,3 @@ let Tlist_Use_Right_Window = 1 "在右侧窗口中显示taglist
 let Tlist_GainFocus_On_ToggleOpen = 1 "打开taglist时，光标保留在taglist窗口
 "}
 
-execute pathogen#infect()
