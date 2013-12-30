@@ -12,6 +12,7 @@ curl https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim > $P
 git clone https://github.com/Lokaltog/vim-powerline.git $PWD/vim/bundle/vim-powerline
 git clone https://github.com/vim-scripts/taglist.vim.git $PWD/vim/bundle/taglist.vim
 git clone https://github.com/scrooloose/nerdtree.git $PWD/vim/bundle/nerdtree
+git clone https://github.com/altercation/vim-colors-solarized.git $PWD/vim/bundle/vim-colors-solarized
 
 # 建立链接
 today=`date +%Y%m%d`
