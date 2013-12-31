@@ -20,7 +20,7 @@ set foldmethod=marker
 filetype plugin indent on "自动识别文件类型，用文件类型plugin脚本，使用缩进定义文件
 "}
 
-execute pathogen#infect()
+execute pathogen#infect() "执行pathogen加载插件
 
 "solarized{
 set t_Co=16
@@ -36,7 +36,6 @@ nnoremap <leader>t :TlistToggle<CR>
 "}
 
 "powerline{
-"set guifont=PowerlineSymbols\ for\ Powerline
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
 "}
