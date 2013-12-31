@@ -1,20 +1,12 @@
 #!/bin/bash
 
-# 建立目录
-mkdir -p vim/autoload
-mkdir -p vim/doc
+# create directories
 mkdir -p vim/bundle
 
-# 下载pathogen
-curl https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim > $PWD/vim/autoload/pathogen.vim
+# get vundle
+git clone https://github.com/gmarik/vundle.git $PWD/vim/bundle/vundle
 
-# 下载插件
-git clone https://github.com/Lokaltog/vim-powerline.git $PWD/vim/bundle/vim-powerline
-git clone https://github.com/vim-scripts/taglist.vim.git $PWD/vim/bundle/taglist.vim
-git clone https://github.com/scrooloose/nerdtree.git $PWD/vim/bundle/nerdtree
-git clone https://github.com/altercation/vim-colors-solarized.git $PWD/vim/bundle/vim-colors-solarized
-
-# 建立链接
+# links
 today=`date +%Y%m%d`
 if [ -f "$HOME/.vimrc" ]; then
 	mv $HOME/.vimrc $HOME/.vimrc.backup.${today}
