@@ -29,7 +29,7 @@ Bundle 'plasticboy/vim-markdown'
 
 Bundle 'taglist.vim'
 Bundle 'L9'
-Bundle 'FuzzyFinder'
+Bundle 'ctrlp.vim'
 Bundle 'Command-T'
 Bundle 'vim-coffee-script'
 
@@ -58,3 +58,4 @@ let g:vim_markdown_folding_disabled=1
 let mapleader = ','
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>t :TlistToggle<CR>
+nnoremap <leader>c :CtrlP<CR>
